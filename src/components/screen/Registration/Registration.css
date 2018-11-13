@@ -1,0 +1,41 @@
+.RegistrationContainer{
+    background-color: #9e0100;
+  min-height: 100vh; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:'#bb0100';
+}
+.RegistrationHeader{
+    background-color: rgba(175, 165, 165, 0.966);
+    /* height: 15%; */
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center
+}
+.RegistrationContainer1{
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column
+    /* margin-top: 50px; */
+}
+.RegistrationButton1{
+    width: 170px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 30px
+}
+.RegistrationButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #9e0100
+    /* background-color: #9e0100 */
+}

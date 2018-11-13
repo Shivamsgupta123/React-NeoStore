@@ -1,0 +1,80 @@
+.HomeContainer{
+    background-color: #9e0100;
+  min-height: 100vh; 
+  /* flex-direction: column; */
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color:'#bb0100';
+}
+.HomeHeader{
+    background-color:rgba(175, 165, 165, 0.966);
+    height: 20%;
+    width: 100%;
+    display:flex;
+    flex:0;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center
+}
+.HomeContainer1{ 
+    display:flex;
+    flex:1;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column 
+}
+.HomeDrawer{
+    /* min-height: 40vh;  */
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    margin-right: 70%;
+    /* justify-content:center;
+    align-items: center;
+    text-align: center; */
+    background-color: aliceblue;
+    width: 30%;    
+}
+.HomeImage{
+height: 80px;
+width: 80px;
+}
+.HomeText{
+    font-size: 14;
+    font-weight: 500;
+    margin: 20px;
+    color: black;
+}
+.HomeButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #9e0100
+}
+.HomeTiles{
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    /* margin-bottom: 20 */
+}
+.HomeSwiperImage{
+    height: 200px;
+    width:100%
+}
+.TopTiles{
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items:center
+}
+/* ButtonDiv{
+    background-color: "white";
+     height: 145px;
+      width: 180;
+      margin-right: 10 
+} */

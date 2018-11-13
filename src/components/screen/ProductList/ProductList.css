@@ -1,0 +1,69 @@
+.ProductListContainer{
+    background-color: #9e0100;
+  min-height: 100vh; 
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  font-size: calc(10px + 2vmin);
+  color:'#bb0100';
+}
+.ProductListHeader{
+    background-color: rgba(175, 165, 165, 0.966);
+    height: 20%;
+    width: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    text-align: center
+}
+.ProductListContainer1{
+    display:flex;
+    flex:1;
+    /* justify-content:center;
+    align-items: center;
+    text-align: center; */
+    flex-direction: column  
+}
+.ProductListButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #9e0100
+}
+.ProductListContainer3{
+    display: flex;
+    flex: 1;
+}
+.ProductListProductImage{
+height:140px;
+width: 150px;
+margin: 5px;
+}
+.ProductListProductInfoContainer{
+    display: flex;
+    flex:1;
+    /* background-color: aliceblue; */
+    margin-top: 5px;
+    justify-content: center;
+    align-items: center;
+    /* width: 1vmax */
+    /* flex-direction: "row" */
+  
+}
+.ProductListContainer4{
+    margin: 5px;
+    background-color: white;
+    display: flex;
+    flex: 1;
+    width: 100%
+}
+.ProductListContainer5{
+    display:flex;
+    flex:1;
+    justify-content: space-between;
+    /* background-color: aqua; */
+    width: 250px;
+    margin-top: 20px;
+
+}
