@@ -14,15 +14,15 @@ class Routes extends Component {
         return (
             // <Switch>
             <Router>
-                <div>
+                <switch>
                     <Route exact path="/" component={Login} />
                     <Route path="/ForgotPassword" component={ForgotPassword} />
                     <Route path="/Registration" component={Registration} />
-                    <Route path="/Home" component={Home} />
+                    <Route path="/Home/:token" component={Home} />
                     <Route path="/MyCart" component={MyCart} />
-                    <Route path="/ProductList/:id/:prduct_number" component={ProductList} />
-                    <Route path="/ProductDetails/:id/:prduct_number/:product_title/:product_id" component={ProductDetails} />
-                </div>
+                    <Route path="/ProductList/:id/:prduct_number/:token" component={ProductList} />
+                    <Route path="/ProductDetails/:id/:prduct_number/:product_title/:product_id/:token" component={ProductDetails} />
+                </switch>
             </Router>
 
         );

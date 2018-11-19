@@ -7,9 +7,10 @@ import StarRatingComponent from 'react-star-rating-component';
 export default class ProductList extends Component {
     constructor(props) {
         super(props);
-        this.state = {          
+        this.state = {
             Data: { data: [] }
         }
+        console.log("plistprops", this.props.match.params.token)
     }
     componentDidMount() {
         fetch("http://staging.php-dev.in:8844/trainingapp/api/products/getList?product_category_id=" + this.props.match.params.prduct_number)
@@ -21,14 +22,14 @@ export default class ProductList extends Component {
             .catch(error => {
                 console.log(error)
             })
-    }   
+    }
 
     render() {
         return (
             <div className="ProductListContainer">
                 <div className="ProductListHeader">
                     <div style={{ width: "20%", textAlign: "center" }}>
-                        <Link to="/Home">
+                        <Link to={`/Home/${this.props.match.params.token}`}>
                             <Button className="ProductListButton"><h4 style={{ color: "white" }}>BACK</h4></Button>
                         </Link>
                     </div>
@@ -42,7 +43,7 @@ export default class ProductList extends Component {
                     <div className="ProductListProductInfoContainer">
                         <ul >
                             {this.state.Data.data.map(item => (
-                                <Link to={`/ProductDetails/${this.props.match.params.id}/${this.props.match.params.prduct_number}/${item.name}/${item.id}`} >
+                                <Link to={`/ProductDetails/${this.props.match.params.id}/${this.props.match.params.prduct_number}/${item.name}/${item.id}/${this.props.match.params.token}`} >
                                     <div className="ProductListContainer4">
                                         <img className="ProductListProductImage" src={item.product_images} />
                                         <div style={{ marginLeft: 20, marginTop: 10 }}>

@@ -15,7 +15,8 @@ export default class Login extends Component {
         this.state = {
             Email: "",
             Password: "",
-            Active: false
+            Active: false,
+            Token: ''
         };
     }
 
@@ -45,8 +46,9 @@ export default class Login extends Component {
             .then((response) => response.json())
             .then(response => {
                 if (response.status == 200) {
-                    this.setState({ Active: true })
-                    console.log("data", response.status)
+                    this.setState({ Active: true, Token: response.data.access_token })
+                    localStorage.setItem("Acctoken", response.data.access_token)
+                    console.log("Logindata", response.data.access_token)
                 }
                 else {
                     console.log("Invalid ID or Password")
@@ -82,7 +84,7 @@ export default class Login extends Component {
                     {
                         this.state.Active ?
                             <div style={{ display: "flex", justifyContent: "center", marginTop: 10 }}>
-                                <Link to="/Home">
+                                <Link to={`/Home/${this.state.Token}`}>
                                     <Button className="LoginButton"
                                         block
                                         bsSize="large"

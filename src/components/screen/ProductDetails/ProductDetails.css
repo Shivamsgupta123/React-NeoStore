@@ -111,9 +111,15 @@ margin: 10px;
 background-color: #9e0100;
 border-radius: 10px    
 }
-.BuyModal{
-    display: flex;
-    flex: 1;
-    background-color: yellow;
-    justify-content: center;
+.ProductDetailsImage4{
+    height: 200px;
+    width: 250px;
+    border:1px solid #73777e;
+}
+.ProductDetailsButton2{
+    height: 50px;
+    width: 170px;
+margin: 10px;
+background-color: #9e0100;
+border-radius: 10px    
 }

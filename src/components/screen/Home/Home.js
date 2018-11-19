@@ -17,6 +17,7 @@ export default class Home extends Component {
             OpenDrawer: false
         }
         this.images = ['https://www.google.co.in/search?q=animal&rlz=1C5CHFA_enIN804IN804&source=lnms&tbm=isch&sa=X&ved=0ahUKEwjtoNmQoq7eAhVCMY8KHfTmCjAQ_AUIDygC&biw=472&bih=615#imgrc=v6HZ1uk0AmaMJM:']
+        console.log("Homeprops", this.props.match.params.token)
     }
     componentDidMount() {
         console.log("iamge", this.images[0])
@@ -55,19 +56,20 @@ export default class Home extends Component {
                                 <text className="HomeText">My Cart</text>
                             </Link>
                             <br />
-                            <Link to="/ProductList/Tables/1">
+                            {/* {`/ProductList/${this.props.match.params.id}/${this.props.match.params.prduct_number}`} */}
+                            <Link to={`/ProductList/Tables/1/${this.props.match.params.token}`}>
                                 <text className="HomeText">Tables</text>
                             </Link>
                             <br />
-                            <Link to="/ProductList/Sofas/3">
+                            <Link to={`/ProductList/Sofas/3/${this.props.match.params.token}`}>
                                 <text className="HomeText">Sofas</text>
                             </Link>
                             <br />
-                            <Link to="/ProductList/Chairs/2">
+                            <Link to={`/ProductList/Chairs/2/${this.props.match.params.token}`}>
                                 <text className="HomeText">Chairs</text>
                             </Link>
                             <br />
-                            <Link to="/ProductList/Cupboards/4">
+                            <Link to={`/ProductList/Cupboards/4/${this.props.match.params.token}`}>
                                 <text className="HomeText">Cupboards</text>
                             </Link>
                             <br />
@@ -86,12 +88,12 @@ export default class Home extends Component {
                         <img className="HomeSwiperImage" src={require('../../assets/images/sofa.jpeg')} />
                         <div className="HomeTiles">
                             <div className="TopTiles">
-                                <Link to="/ProductList/Tables/1">
+                                <Link to={`/ProductList/Tables/1/${this.props.match.params.token}`}>
                                     <div style={{ backgroundColor: "white", height: 145, width: 180, marginRight: 10 }}>
                                         <u style={{ color: "white" }}>  <h2 style={{ textAlign: "center", color: " #9e0100", paddingTop: 55 }}>Tables</h2></u>
                                     </div>
                                 </Link>
-                                <Link to="/ProductList/Sofas/3">
+                                <Link to={`/ProductList/Sofas/3/${this.props.match.params.token}`}>
                                     <div style={{ backgroundColor: "white", height: 145, width: 180, marginLeft: 10 }}>
                                         <u style={{ color: "white" }}> <h2 style={{ textAlign: "center", color: " #9e0100", paddingTop: 55 }}>Sofas</h2></u>
                                     </div>
@@ -99,12 +101,12 @@ export default class Home extends Component {
                             </div>
 
                             <div className="TopTiles">
-                                <Link to="/ProductList/Cupboards/4">
+                                <Link to={`/ProductList/Cupboards/4/${this.props.match.params.token}`}>
                                     <div style={{ backgroundColor: "white", height: 145, width: 180, marginRight: 10 }}>
                                         <u style={{ color: "white" }}>   <h2 style={{ textAlign: "center", color: " #9e0100", paddingTop: 55 }}>Cupboards</h2></u>
                                     </div>
                                 </Link>
-                                <Link to="/ProductList/Chairs/2">
+                                <Link to={`/ProductList/Chairs/2/${this.props.match.params.token}`}>
                                     <div style={{ backgroundColor: "white", height: 145, width: 180, marginLeft: 10 }}>
                                         <u style={{ color: "white" }}>  <h2 style={{ textAlign: "center", color: " #9e0100", paddingTop: 55 }}>Chairs</h2></u>
                                     </div>
