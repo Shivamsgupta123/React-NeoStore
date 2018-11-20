@@ -43,7 +43,7 @@ export default class ProductList extends Component {
                     <div className="ProductListProductInfoContainer">
                         <ul >
                             {this.state.Data.data.map(item => (
-                                <Link to={`/ProductDetails/${this.props.match.params.id}/${this.props.match.params.prduct_number}/${item.name}/${item.id}/${this.props.match.params.token}`} >
+                                <Link to={`/ProductDetails/${this.props.match.params.id}/${this.props.match.params.prduct_number}/${item.name}/${item.id}`} >
                                     <div className="ProductListContainer4">
                                         <img className="ProductListProductImage" src={item.product_images} />
                                         <div style={{ marginLeft: 20, marginTop: 10 }}>
@@ -61,7 +61,6 @@ export default class ProductList extends Component {
                                                     />
                                                 </div>
                                             </div>
-
                                         </div>
                                         <br />
                                         <div>

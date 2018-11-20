@@ -1,4 +1,4 @@
-.Container{
+.MyCartContainer{
     background-color: #9e0100;
   min-height: 100vh; 
   flex-direction: column;
@@ -7,7 +7,7 @@
   font-size: calc(10px + 2vmin);
   color:'#bb0100';
 }
-.Header{
+.MyCartHeader{
     background-color: white;
     height: 20%;
     width: 100%;
@@ -17,12 +17,47 @@
     align-items: center;
     text-align: center
 }
-.Container1{
+.MyCartContainer1{
     display:flex;
     flex:1;
-    justify-content:center;
+    /* justify-content:center;
     align-items: center;
-    text-align: center;
+    text-align: center; */
     flex-direction: column
     /* margin-top: 50px; */
+}
+.MyCartButton{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: #9e0100
+}
+.MycartProductInfo{
+    display:flex;
+    flex:1;
+    background-color: white;
+    /* height:30px; */
+    width: 100%;
+    padding: 15px;
+    margin-top: 5px; 
+    flex-direction: row;
+    
+}
+.MyCartImage{
+    height: 75px;
+    width: 75px;
+    border:1px solid #73777e;
+}
+.MyCartText1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 15px
+}
+.MyCartContainer2{
+    flex-direction: column
+}
+.MyCartText2{
+    font-size: 15px;
+    /* font-weight: 600; */
+    margin-left: 15px
 }

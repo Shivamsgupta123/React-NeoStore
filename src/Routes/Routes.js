@@ -10,18 +10,31 @@ import ProductList from '../components/screen/ProductList/ProductList';
 import ProductDetails from '../components/screen/ProductDetails/ProductDetails';
 
 class Routes extends Component {
+    constructor(props) {
+        super(props)
+        this.comp = Login
+        this.checkLogin()
+    }
+
+    checkLogin = () => {
+        const token = localStorage.getItem("Acctoken");
+        if (token)
+            this.comp = Home
+    }
+
     render() {
         return (
             // <Switch>
             <Router>
                 <switch>
-                    <Route exact path="/" component={Login} />
+                    <Route exact path="/" component={this.comp} />
+                    <Route exact path="/Login" component={Login} />
                     <Route path="/ForgotPassword" component={ForgotPassword} />
                     <Route path="/Registration" component={Registration} />
-                    <Route path="/Home/:token" component={Home} />
+                    <Route path="/Home" component={Home} />
                     <Route path="/MyCart" component={MyCart} />
-                    <Route path="/ProductList/:id/:prduct_number/:token" component={ProductList} />
-                    <Route path="/ProductDetails/:id/:prduct_number/:product_title/:product_id/:token" component={ProductDetails} />
+                    <Route path="/ProductList/:id/:prduct_number" component={ProductList} />
+                    <Route path="/ProductDetails/:id/:prduct_number/:product_title/:product_id" component={ProductDetails} />
                 </switch>
             </Router>
 
@@ -30,3 +43,6 @@ class Routes extends Component {
 }
 
 export default Routes;
+
+
+

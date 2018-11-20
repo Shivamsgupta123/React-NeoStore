@@ -97,7 +97,7 @@ export default class ProductDetails extends Component {
             {
                 method: "POST",
                 headers: {
-                    access_token: this.props.match.params.token
+                    access_token: localStorage.getItem("Acctoken")
                 },
                 body: form
             }
@@ -106,7 +106,6 @@ export default class ProductDetails extends Component {
             .then(response => {
                 if (response.status == 200) {
                     alert("Item added to the cart");
-                    // console.log("Item added to the cart")
                     this.setState({ show: false, qty: '' });
                 }
                 else {
