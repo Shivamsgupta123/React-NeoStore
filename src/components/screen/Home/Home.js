@@ -80,7 +80,9 @@ export default class Home extends Component {
                             <br />
                             <u style={{ color: "white" }}><text className="HomeText">Store Loator</text></u>
                             <br />
-                            <u style={{ color: "white" }}> <text className="HomeText">My Order</text></u>
+                            <Link to="/MyOrder">
+                                <u style={{ color: "white" }}> <text className="HomeText">My Order</text></u>
+                            </Link>
                             <br />
                             <Link to="/Login"><u style={{ color: "white" }}><text className="HomeText" onClick={this.logOut}>Log Out</text></u></Link>
                         </div>

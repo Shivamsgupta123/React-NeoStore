@@ -60,58 +60,58 @@ export default class ProductList extends Component {
 }
 
 
-.ProductListContainer{
-    /* background-color: #9e0100; */
-    /* min-height: 100vh;  */
-    flex - direction: column;
-    /* align-items: center;
-    justify-content: center; */
-    font - size: calc(10px + 2vmin);
-    color: '#bb0100';
-}
-.ProductListHeader{
-    background - color: rgba(175, 165, 165, 0.966);
-    height: 20 %;
-    height: 20 %;
-    width: 100 %;
-    display: flex;
-    flex - direction: row;
-    justify - content: center;
-    align - items: center;
-    text - align: center
-}
-.ProductListContainer1{
+// .ProductListContainer{
+//     /* background-color: #9e0100; */
+//     /* min-height: 100vh;  */
+//     flex - direction: column;
+//     /* align-items: center;
+//     justify-content: center; */
+//     font - size: calc(10px + 2vmin);
+//     color: '#bb0100';
+// }
+// .ProductListHeader{
+//     background - color: rgba(175, 165, 165, 0.966);
+//     height: 20 %;
+//     height: 20 %;
+//     width: 100 %;
+//     display: flex;
+//     flex - direction: row;
+//     justify - content: center;
+//     align - items: center;
+//     text - align: center
+// }
+// .ProductListContainer1{
 
-    display: flex;
-    flex: 1;
-    background - color: #9e0100;
-    justify - content: center;
-    align - items: center;
-    text - align: center;
-    flex - direction: column;
-    /* background-color: white; */
-    /* width:100%; */
-    /* height: 30%; */
-    /* margin-top: 50px; */
-}
-.ProductListButton{
-    height: 50px;
-    width: 50px;
-    border - radius: 25px;
-    background - color: #9e0100
-}
-.ProductContainer{
-    display: flex;
-    flex: 1;
-    background - color: white;
-    margin: 5px;
-    width: 90 %;
-    /* height: 100px; */
-}
-.ProductlistImage{
-    height: 90 %;
-    width: 40 %;
-    margin: 7px;
+//     display: flex;
+//     flex: 1;
+//     background - color: #9e0100;
+//     justify - content: center;
+//     align - items: center;
+//     text - align: center;
+//     flex - direction: column;
+//     /* background-color: white; */
+//     /* width:100%; */
+//     /* height: 30%; */
+//     /* margin-top: 50px; */
+// }
+// .ProductListButton{
+//     height: 50px;
+//     width: 50px;
+//     border - radius: 25px;
+//     background - color: #9e0100
+// }
+// .ProductContainer{
+//     display: flex;
+//     flex: 1;
+//     background - color: white;
+//     margin: 5px;
+//     width: 90 %;
+//     /* height: 100px; */
+// }
+// .ProductlistImage{
+//     height: 90 %;
+//     width: 40 %;
+//     margin: 7px;
 
-}
+// }
 

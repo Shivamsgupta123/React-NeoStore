@@ -8,6 +8,9 @@ import Home from '../components/screen/Home/Home';
 import MyCart from '../components/screen/MyCart/MyCart';
 import ProductList from '../components/screen/ProductList/ProductList';
 import ProductDetails from '../components/screen/ProductDetails/ProductDetails';
+import MyOrder from '../components/screen/MyOrder/MyOrder';
+import SelectAddress from '../components/screen/SelectAddress/SelectAddress';
+import AddAddress from '../components/screen/AddAddress/AddAddress';
 
 class Routes extends Component {
     constructor(props) {
@@ -35,6 +38,9 @@ class Routes extends Component {
                     <Route path="/MyCart" component={MyCart} />
                     <Route path="/ProductList/:id/:prduct_number" component={ProductList} />
                     <Route path="/ProductDetails/:id/:prduct_number/:product_title/:product_id" component={ProductDetails} />
+                    <Route path="/MyOrder" component={MyOrder} />
+                    <Route path="/SelectAddress" component={SelectAddress} />
+                    <Route path="/AddAddress" component={AddAddress} />
                 </switch>
             </Router>
 
